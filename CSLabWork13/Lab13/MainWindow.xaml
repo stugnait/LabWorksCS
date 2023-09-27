@@ -1,0 +1,45 @@
+﻿<Window x:Class="Lab13.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab13"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem>
+                
+                <Grid Background="Gray">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <DataGrid Grid.Column="0" x:Name="DataGrid" AutoGenerateColumns="True">
+                        
+                    </DataGrid>
+
+                    
+                    <StackPanel Grid.Column="1" Margin="10,100">
+                        
+                        <TextBox x:Name="CityInput"></TextBox>
+                        <TextBox x:Name="NumInput"></TextBox>
+                        <TextBox x:Name="TypeInput"></TextBox>
+                        
+                        <Button Click="AddNew_OnClick">AddNew</Button>
+                        <Button Click="SortByAlphabet_OnClick">SortByNAme</Button>
+                        
+                    </StackPanel>
+                    
+                    <Label Grid.Column="2" x:Name="Label"></Label>
+                    <Button Grid.Column="3" Height="20px" Click="ToSecond_Click">Next ex</Button>
+
+                </Grid>
+                
+            </TabItem>
+        </TabControl>
+    </Grid>
+    
+    
+</Window>

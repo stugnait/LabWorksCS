@@ -1,0 +1,28 @@
+﻿<Window x:Class="Lab13.N3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:Lab13"
+        mc:Ignorable="d"
+        Title="N3" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="1">
+            <Label>Name</Label>
+            <TextBox x:Name="BusName"></TextBox>
+            <Label>Year</Label>
+            <TextBox x:Name="BusYear"></TextBox>
+            <Button Height="20px" Margin="0,10,0,0" Click="ButtonBase_OnClick">Add</Button>
+            <Button Click="sort_OnClick" Height="20px">Sort</Button>
+            <Label x:Name="Output"></Label>
+        </StackPanel>
+        
+        
+    </Grid>
+    
+</Window>
