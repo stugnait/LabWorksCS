@@ -14,10 +14,15 @@
         </Grid.ColumnDefinitions>        
         
         <StackPanel Grid.Column="1">
-            <Label HorizontalAlignment="Center">FirstProcedure</Label>
+            <Label HorizontalAlignment="Center">First Procedure</Label>
             <TextBox x:Name="FirstProcedure"></TextBox>
-            <Label HorizontalAlignment="Center">SecondProcedure</Label>
+            <Label HorizontalAlignment="Center">Second Procedure</Label>
             <TextBox x:Name="SecondProcedure"></TextBox>
+            <Label HorizontalAlignment="Center">Amount of procedures?</Label>
+            <TextBox x:Name="Counter"></TextBox>
+            <Button Height="20px" Margin="20,20" Click="Solve">Solve</Button>
+            
+            <Label x:Name="Ouput" Background="Bisque"></Label>
         </StackPanel>
         <Button Grid.Column="2" Click="ToSecondTask" Height="20px" Width="140px">Next Task</Button>
     </Grid>

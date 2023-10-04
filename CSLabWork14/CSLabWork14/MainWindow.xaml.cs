@@ -27,7 +27,31 @@ namespace CSLabWork14
 
         private void ToSecondTask(object sender, RoutedEventArgs e)
         {
-            
+            SecondWindow secondWindow = new SecondWindow();
+            secondWindow.Show();
+        }
+
+        private void Solve(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                TimeSpan firsTimeOnly = TimeSpan.Parse(FirstProcedure.Text);
+                TimeSpan secondTimeOnly = TimeSpan.Parse(SecondProcedure.Text);
+                TimeSpan timeNeeded = secondTimeOnly - firsTimeOnly;
+
+                string stringOutput = firsTimeOnly.ToString()+'\n'+secondTimeOnly+'\n';
+                
+                for (int i = 1; i < Convert.ToInt32(Counter.Text); i++)
+                {
+                    stringOutput += (secondTimeOnly + timeNeeded*i).ToString()+'\n';
+                }
+
+                Ouput.Content = stringOutput;
+            }
+            catch (Exception exception)
+            {
+                Ouput.Content = "ERROR!";
+            }
         }
     }
 }

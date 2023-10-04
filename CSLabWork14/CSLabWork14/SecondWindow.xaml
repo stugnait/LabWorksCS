@@ -5,8 +5,40 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:CSLabWork14"
         mc:Ignorable="d"
-        Title="SecondWindow" Height="450" Width="800">
+        Title="SecondWindow" Height="550" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>        
         
+        <StackPanel Grid.Column="1">
+            <Label HorizontalAlignment="Center">ProductName</Label>
+            <TextBox x:Name="ProductName"></TextBox>
+            <Label HorizontalAlignment="Center">ProductCompany</Label>
+            <TextBox x:Name="ProductCompany"></TextBox>
+            <Label HorizontalAlignment="Center">CreationDate</Label>
+            <TextBox x:Name="CreationDate"></TextBox>
+            <Label HorizontalAlignment="Center">ExpireDate</Label>
+            <TextBox x:Name="ExpireDate"></TextBox>
+            <Label HorizontalAlignment="Center">Price</Label>
+            <TextBox x:Name="Price"></TextBox>
+            <Label HorizontalAlignment="Center">ProductFind(optional)</Label>
+            <TextBox x:Name="Find"></TextBox>
+            
+            
+            <Button Height="20px" Margin="20,20,20,2" Click="Solve">Solve</Button>
+            <Button Height="20px" Margin="20,2" Click="OutputAll">OutputAll</Button>
+            <Button Height="20px" Margin="20,2" Click="ThisMonth">ThisMonth</Button>
+            <Button Height="20px" Margin="20,2" Click="TwoDaysToExpire">TwoDaysToExpire</Button>
+            <Button Height="20px" Margin="20,2" Click="FindPurest">Find</Button>
+            <Button Height="20px" Margin="20,2" Click="Expired">Expired</Button>
+            
+        </StackPanel>
+        
+        <TextBlock Grid.Column="0" TextWrapping="Wrap" Height="600px" Margin="20,20"  x:Name="Ouput" Background="Bisque"></TextBlock>
+        <Button Grid.Column="2" Click="ToThirdTask" Height="20px" Width="140px">Next Task</Button>
+
     </Grid>
 </Window>

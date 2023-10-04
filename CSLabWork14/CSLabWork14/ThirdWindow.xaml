@@ -7,6 +7,20 @@
         mc:Ignorable="d"
         Title="ThirdWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>        
         
+        <StackPanel Grid.Column="1">
+            
+            <Button Height="20px" Margin="20,20,20,2" Click="Solve">Solve</Button>
+            
+        </StackPanel>
+        
+        <TextBlock Grid.Column="0" TextWrapping="Wrap" Height="600px" Margin="20,20"  x:Name="Ouput" Background="Bisque"></TextBlock>
+        <Button Grid.Column="2" Click="ToFourthTask" Height="20px" Width="140px">Next Task</Button>
+
     </Grid>
 </Window>
