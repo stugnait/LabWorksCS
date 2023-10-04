@@ -7,21 +7,22 @@
  public partial class ThirdWindow : Window
  {
      
-     public void HashReset()
-     {
-          HashSet<int> firstHashSet = new HashSet<int>()
-             {
-                 1,2,3,4,5,8,9,10
-             };
-          HashSet<int> secondHashSet = new HashSet<int>()
-         {
-             6,7,8,9,10
-         };
-     }
+     
      public ThirdWindow()
      {
          InitializeComponent();
      }
+     public void HashBuild()
+   {
+        HashSet<int> firstHashSet = new HashSet<int>()
+           {
+               1,2,3,4,5,8,9,10
+           };
+        HashSet<int> secondHashSet = new HashSet<int>()
+       {
+           6,7,8,9,10
+       };
+   }
      private void Solve(object sender, RoutedEventArgs e)
      {
          HashSet<int> firstHashSet = new HashSet<int>()
@@ -34,13 +35,13 @@
          };
          try
          {
-             HashReset();
+             HashBuild();
              firstHashSet.IntersectWith(secondHashSet);
-             HashReset();
+             HashBuild();
              firstHashSet.UnionWith(secondHashSet);
-             HashReset();
+             HashBuild();
              firstHashSet.ExceptWith(secondHashSet);
-             HashReset();
+             HashBuild();
              firstHashSet.SymmetricExceptWith(secondHashSet);
          }
          catch (Exception exception)
@@ -51,6 +52,7 @@
  
      private void ToFourthTask(object sender, RoutedEventArgs e)
      {
-         
+         FourthWindow fourthWindow = new FourthWindow();
+         fourthWindow.Show();
      }
  } 

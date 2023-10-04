@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:CSLabWork14"
         mc:Ignorable="d"
         Title="FourthWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid HorizontalAlignment="Center" Width="300px">
+        <StackPanel VerticalAlignment="Center">
+            <Button Click="Solve_Click" Height="20px">Solve</Button>
+        </StackPanel>
     </Grid>
 </Window>
