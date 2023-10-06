@@ -28,8 +28,6 @@ public partial class FourthWindow : Window
 
         bool ckey = dict.ContainsKey("cpp");
 
-        bool cvalue = dict.ContainsValue("rider.exe");
-        
         dict.Clear();
 
     }

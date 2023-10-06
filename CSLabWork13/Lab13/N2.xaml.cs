@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Runtime.InteropServices.JavaScript;
 using System.Windows;
 
 namespace Lab13;
@@ -10,8 +9,6 @@ public partial class N2 : Window
     {
         InitializeComponent();
     }
-    
-    
 
     private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
     {
