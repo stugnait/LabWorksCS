@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Windows;
 namespace Lab13
 {
@@ -8,7 +9,7 @@ namespace Lab13
     public partial class MainWindow : Window
     {
 
-        public string DataBasePath = @"C:\Users\itesl\RiderProjects\CSLabWork13\Lab13\aeroflotDB.txt";
+        public string DataBasePath = @"C:\Users\itesl\LabWorksCS\CSLabWork13\Lab13\aeroflotDB.txt";
         
         public MainWindow()
         {
@@ -29,8 +30,8 @@ namespace Lab13
         private void SortByAlphabet_OnClick(object sender, RoutedEventArgs e)
         {
             
-            string[] enterStrings = File.ReadAllLines(@"C:\Users\itesl\RiderProjects\CSLabWork13\Lab13\aeroflotDB.txt");
-
+            string[] enterStrings = File.ReadAllLines(@"C:\Users\itesl\LabWorksCS\CSLabWork13\Lab13\aeroflotDB.txt");
+            string output = "";
             List<AEROFLOT> aeroflots = new List<AEROFLOT>();
 
             for (int i = 0; i < enterStrings.Length; i++)
@@ -39,19 +40,24 @@ namespace Lab13
 
                 aeroflots.Add(new AEROFLOT(temporary[0], temporary[1], temporary[2]));
 
-                Label.Content = aeroflots[i];
+                 
             }
 
-            
-            aeroflots = aeroflots.OrderBy(s => s.CITY).ToList();
+            List<AEROFLOT> sortedNames = aeroflots.OrderBy(Name => Name.CITY).ToList();
+            //
 
-            DataGrid.ItemsSource = aeroflots;
+
+            foreach (AEROFLOT aeroflot in sortedNames)
+            {
+                output += aeroflot +"\n";
+            }
+            Label.Content = output ;
         }
         
 
         private void ReloadDataBase()
         {
-            string[] enterStrings = File.ReadAllLines(@"C:\Users\itesl\RiderProjects\CSLabWork13\Lab13\aeroflotDB.txt");
+            string[] enterStrings = File.ReadAllLines(@"C:\Users\itesl\LabWorksCS\CSLabWork13\Lab13\aeroflotDB.txt");
 
             List<AEROFLOT> aeroflots = new List<AEROFLOT>();
 
