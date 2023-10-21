@@ -26,9 +26,12 @@
                         <TextBox x:Name="CityInput"></TextBox>
                         <TextBox x:Name="NumInput"></TextBox>
                         <TextBox x:Name="TypeInput"></TextBox>
+                        <Label>Input</Label>
+                        <TextBox x:Name="FindCity"></TextBox>
                         
                         <Button Click="AddNew_OnClick">AddNew</Button>
                         <Button Click="SortByAlphabet_OnClick">SortByNAme</Button>
+                    <Button Height="20px" Click="Find">ghjkl</Button>
                         
                     </StackPanel>
                     

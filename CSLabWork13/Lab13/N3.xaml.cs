@@ -22,7 +22,7 @@ public partial class N3 : Window
 
         Output.Content = "Year > "+tuple.year +" Name > "+ tuple.name;
         
-        WriteTupleToFile(@"C:\Users\itesl\RiderProjects\CSLabWork13\Lab13\tuples.txt",tuple);
+        WriteTupleToFile(@"C:\Users\itesl\LabWorksCS\CSLabWork13\Lab13\tuples.txt",tuple);
     }
     
     private void WriteTupleToFile(string path, (string name, int year, int old, bool isNew) tuple)
@@ -53,7 +53,7 @@ public partial class N3 : Window
 
     private void sort_OnClick(object sender, RoutedEventArgs e)
     {
-        List<(string name, int year, int old, bool isExpired)> tuples = Solution(@"C:\Users\itesl\RiderProjects\CSLabWork13\Lab13\tuples.txt");
+        List<(string name, int year, int old, bool isExpired)> tuples = Solution(@"C:\Users\itesl\LabWorksCS\CSLabWork13\Lab13\tuples.txt");
 
         Output.Content = null;
         foreach (var tuple in tuples)
