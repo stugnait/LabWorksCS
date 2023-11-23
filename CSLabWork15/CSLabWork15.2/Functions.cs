@@ -32,7 +32,7 @@ public class Node<T>
     }
 }
 
-public class SinglyLinkedList<T>
+public class SinglyLinkedList<T> : IEnumerable<int>
 {
     public Node<T> Head;
 
@@ -68,19 +68,15 @@ public class SinglyLinkedList<T>
             {
                 if (searchCurrent.Next == null)
                 {
-                    // Found a match for the entire search list
                     if (searchPrevious == null)
                     {
-                        // Replace the head of the main list
                         Head = replaceList.Head;
                     }
                     else
                     {
-                        // Replace inside the main list
                         searchPrevious.Next = replaceList.Head;
                     }
-
-                    // Connect the replace list to the rest of the main list
+                    
                     while (replaceCurrent.Next != null)
                     {
                         replaceCurrent = replaceCurrent.Next;
@@ -115,5 +111,10 @@ public class SinglyLinkedList<T>
             current = current.Next;
         }
         Console.WriteLine("null");
+    }
+
+    public IEnumerator<int> GetEnumerator()
+    {
+        throw new NotImplementedException();
     }
 }

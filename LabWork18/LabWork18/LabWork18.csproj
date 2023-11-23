@@ -6,13 +6,17 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
-        <RootNamespace>LabWork16</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
       <Content Include="..\.dockerignore">
         <Link>.dockerignore</Link>
       </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Recognizers.Text.DateTime" Version="1.8.8" />
+      <PackageReference Include="Microsoft.Recognizers.Text.Sequence" Version="1.8.8" />
     </ItemGroup>
 
 </Project>
