@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "DEmR5UEWlJCFBcUoGKWalCuVDzDjxY4svukfYOYW7D/2nmZkQjVyMmmOZBk+Oz6nIlVG20Izms6ZR2W1QdfwHw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\itesl\\LabWorksCS\\CSLabWorkAdded\\CSLabWorkAdded\\CSLabWorkAdded.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\itesl\\.nuget\\packages\\fluentvalidation\\11.8.1\\fluentvalidation.11.8.1.nupkg.sha512",
+    "C:\\Users\\itesl\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

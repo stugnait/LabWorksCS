@@ -37,7 +37,16 @@ class Program
             };
         };
     }
-
+    
+    public static string fileName = @"C:\Users\itesl\LabWorksCS\CSLabWork17\CSLabWork17\File.txt";
+    
+    struct AEROFLOT
+    {
+        public string CITY;
+        public int NUM;
+        public string TYPE;
+    }
+    
     static void Main()
     {
         while (true)
@@ -61,12 +70,62 @@ class Program
                         .Select(x => maxElement)
                         .ToArray();
 
-                    Console.WriteLine("Масив до модифікації: " + string.Join(", ", array));
-                    Console.WriteLine("Максимальний елемент: " + maxElement);
-                    Console.WriteLine("Модифікований масив: " + string.Join(", ", modifiedArray));
+                    Console.WriteLine(string.Join(", ", array));
+                    Console.WriteLine(maxElement);
+                    Console.WriteLine(string.Join(", ", modifiedArray));
+                    break;
+                case 3:
+                    Console.Write("Введіть кількість рейсів N: ");
+                    int N = int.Parse(Console.ReadLine());
 
+                    AEROFLOT[] AIR = new AEROFLOT[N];
+
+                    for (int i = 0; i < N; i++)
+                    {
+                        Console.WriteLine($"Рейс {i + 1}:");
+                        Console.Write("Назва населеного пункту призначення: ");
+                        AIR[i].CITY = Console.ReadLine();
+
+                        Console.Write("Номер рейсу: ");
+                        AIR[i].NUM = int.Parse(Console.ReadLine());
+
+                        Console.Write("Тип літака: ");
+                        AIR[i].TYPE = Console.ReadLine();
+                    }
+
+                    AIR = AIR.OrderBy(x => x.CITY).ToArray();
+
+                    Console.WriteLine("\nВідсортовані записи за назвами пунктів призначення:");
+                    foreach (var flight in AIR)
+                    {
+                    Console.WriteLine($"Місто: {flight.CITY}, Номер рейсу: {flight.NUM}, Тип літака: {flight.TYPE}");
+                    }
                     
-                    
+                    Console.Write("\nВведіть тип літака для пошуку: ");
+                    string searchType = Console.ReadLine();
+
+                    var filteredFlights = AIR.Where(x => x.TYPE.Equals(searchType, StringComparison.OrdinalIgnoreCase)).ToList();
+                    if (filteredFlights.Any())
+                    {
+                        Console.WriteLine($"\nРейси літаків типу {searchType}:\n");
+                        foreach (var flight in filteredFlights)
+                        {
+                            Console.WriteLine($"Місто: {flight.CITY}, Номер рейсу: {flight.NUM}");
+                        }
+                    }
+                    else
+                    {
+                      Console.WriteLine($"Рейсів літаків типу {searchType} не знайдено.");
+                    }
+
+
+                    using (StreamWriter writer = new StreamWriter(fileName))
+                    {
+                        foreach (var flight in AIR)
+                        {
+                                writer.WriteLine($"{flight.CITY},{flight.NUM},{flight.TYPE}");
+                        }
+                    }
                     break;
             }
         }

@@ -1,0 +1,16 @@
+[
+  {
+    "Login": "Banjo",
+    "Password": "pass22222221221",
+    "Email": "user1@example.com",
+    "Age": 25,
+    "PhoneNumber": "123456789"
+  },
+  {
+    "Login": "kIRA",
+    "Password": "pas22222222222s1",
+    "Email": "user1@example.com",
+    "Age": 25,
+    "PhoneNumber": "123456789"
+  }
+]

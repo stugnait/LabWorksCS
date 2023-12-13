@@ -1,0 +1,15 @@
+C:\Users\itesl\LabWorksCS\CSLabWork17\CSLabWork17\bin\Debug\net7.0\CSLabWork17.exe
+C:\Users\itesl\LabWorksCS\CSLabWork17\CSLabWork17\bin\Debug\net7.0\CSLabWork17.deps.json
+C:\Users\itesl\LabWorksCS\CSLabWork17\CSLabWork17\bin\Debug\net7.0\CSLabWork17.runtimeconfig.json
+C:\Users\itesl\LabWorksCS\CSLabWork17\CSLabWork17\bin\Debug\net7.0\CSLabWork17.dll
+C:\Users\itesl\LabWorksCS\CSLabWork17\CSLabWork17\bin\Debug\net7.0\CSLabWork17.pdb
+C:\Users\itesl\LabWorksCS\CSLabWork17\CSLabWork17\obj\Debug\net7.0\CSLabWork17.csproj.AssemblyReference.cache
+C:\Users\itesl\LabWorksCS\CSLabWork17\CSLabWork17\obj\Debug\net7.0\CSLabWork17.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\itesl\LabWorksCS\CSLabWork17\CSLabWork17\obj\Debug\net7.0\CSLabWork17.AssemblyInfoInputs.cache
+C:\Users\itesl\LabWorksCS\CSLabWork17\CSLabWork17\obj\Debug\net7.0\CSLabWork17.AssemblyInfo.cs
+C:\Users\itesl\LabWorksCS\CSLabWork17\CSLabWork17\obj\Debug\net7.0\CSLabWork17.csproj.CoreCompileInputs.cache
+C:\Users\itesl\LabWorksCS\CSLabWork17\CSLabWork17\obj\Debug\net7.0\CSLabWork17.dll
+C:\Users\itesl\LabWorksCS\CSLabWork17\CSLabWork17\obj\Debug\net7.0\refint\CSLabWork17.dll
+C:\Users\itesl\LabWorksCS\CSLabWork17\CSLabWork17\obj\Debug\net7.0\CSLabWork17.pdb
+C:\Users\itesl\LabWorksCS\CSLabWork17\CSLabWork17\obj\Debug\net7.0\CSLabWork17.genruntimeconfig.cache
+C:\Users\itesl\LabWorksCS\CSLabWork17\CSLabWork17\obj\Debug\net7.0\ref\CSLabWork17.dll

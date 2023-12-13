@@ -9,7 +9,7 @@ while (!exit)
     {
         case 1:
             Stack<int> stack = new Stack<int>();
-            string expression = "(2-4b)/(a*6)+(a+3)*(3-a)";
+            string expression = "(2-4b/(a*6+(a+3)*(3-a)";
 
             for (int i = 0; i < expression.Length; i++)
             {
@@ -81,13 +81,12 @@ while (!exit)
             tree.Insert(60);
             tree.Insert(80);
 
-            // Preorder traversal
-            Console.WriteLine("Preorder Traversal:");
+            Console.WriteLine("Наше дерево:");
             tree.PreorderTraversal();
 
             // Delete an element
             tree.Delete(20);
-            Console.WriteLine("\nAfter deleting 20:");
+            Console.WriteLine("\nПісля видалення 20:");
             tree.PreorderTraversal();
 
             // Search in the binary tree
@@ -106,15 +105,14 @@ while (!exit)
         case 4:
             try
                 {
-                    //A->A,A->B,A->E,C->E,D->E,B->E,D->D
-                    Console.WriteLine("Enter edges (e.g., A->B,C->D):");
+                    Console.WriteLine("A->A,A->B,A->E,C->E,D->E,B->E,D->D");
                     string input = Console.ReadLine();
                     List<Tuple<char, char>> edges = ParseEdges(input);
                     Graph graph = new Graph(edges);
     
-                    Console.WriteLine("Adjacency Matrix:\n" + MatrixToString(graph.AdjacencyMatrix()));
-                    Console.WriteLine("Incidence Matrix:\n" + MatrixToString(graph.IncidenceMatrix()));
-                    Console.WriteLine("Edge List:\n" + EdgesToString(graph.EdgeList()));
+                    Console.WriteLine("Матриця Суміжності:\n" + MatrixToString(graph.AdjacencyMatrix()));
+                    Console.WriteLine("Матриця інцидентності:\n" + MatrixToString(graph.IncidenceMatrix()));
+                    Console.WriteLine("Що куда входить:\n" + EdgesToString(graph.EdgeList()));
                 }
                 catch (Exception ex)
                 {
@@ -125,7 +123,7 @@ while (!exit)
             exit = true;
             break;
         default:
-            Console.WriteLine("Something went wrong..");
+            Console.WriteLine("Something went wrong");
             break;
     }
     

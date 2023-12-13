@@ -12,7 +12,6 @@ public class Company
     public void Edit(string change)
     {
         this.name = change;
-
     }
 
 }

@@ -1,0 +1,15 @@
+C:\Users\itesl\LabWorksCS\CSLabWork15\СSLabWork15.3\bin\Debug\net7.0\СSLabWork15.3.exe
+C:\Users\itesl\LabWorksCS\CSLabWork15\СSLabWork15.3\bin\Debug\net7.0\СSLabWork15.3.deps.json
+C:\Users\itesl\LabWorksCS\CSLabWork15\СSLabWork15.3\bin\Debug\net7.0\СSLabWork15.3.runtimeconfig.json
+C:\Users\itesl\LabWorksCS\CSLabWork15\СSLabWork15.3\bin\Debug\net7.0\СSLabWork15.3.dll
+C:\Users\itesl\LabWorksCS\CSLabWork15\СSLabWork15.3\bin\Debug\net7.0\СSLabWork15.3.pdb
+C:\Users\itesl\LabWorksCS\CSLabWork15\СSLabWork15.3\obj\Debug\net7.0\СSLabWork15.3.csproj.AssemblyReference.cache
+C:\Users\itesl\LabWorksCS\CSLabWork15\СSLabWork15.3\obj\Debug\net7.0\СSLabWork15.3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\itesl\LabWorksCS\CSLabWork15\СSLabWork15.3\obj\Debug\net7.0\СSLabWork15.3.AssemblyInfoInputs.cache
+C:\Users\itesl\LabWorksCS\CSLabWork15\СSLabWork15.3\obj\Debug\net7.0\СSLabWork15.3.AssemblyInfo.cs
+C:\Users\itesl\LabWorksCS\CSLabWork15\СSLabWork15.3\obj\Debug\net7.0\СSLabWork15.3.csproj.CoreCompileInputs.cache
+C:\Users\itesl\LabWorksCS\CSLabWork15\СSLabWork15.3\obj\Debug\net7.0\СSLabWork15.3.dll
+C:\Users\itesl\LabWorksCS\CSLabWork15\СSLabWork15.3\obj\Debug\net7.0\refint\СSLabWork15.3.dll
+C:\Users\itesl\LabWorksCS\CSLabWork15\СSLabWork15.3\obj\Debug\net7.0\СSLabWork15.3.pdb
+C:\Users\itesl\LabWorksCS\CSLabWork15\СSLabWork15.3\obj\Debug\net7.0\СSLabWork15.3.genruntimeconfig.cache
+C:\Users\itesl\LabWorksCS\CSLabWork15\СSLabWork15.3\obj\Debug\net7.0\ref\СSLabWork15.3.dll
